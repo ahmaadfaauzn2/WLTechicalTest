@@ -1,0 +1,121 @@
+/* Full-page container to center the content */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f3f4f6; /* Soft background color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the card and add shadow */
+.card-shadow {
+  width: 60rem; /* Adjust width for the table */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  border-radius: 12px; /* Smooth corners */
+  background-color: #ffffff; /* White background */
+  padding: 2rem; /* Add padding inside the card */
+  transition: transform 0.3s, box-shadow 0.3s; /* Subtle hover effect */
+}
+
+.card-shadow:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+}
+
+/* Table header */
+/* Ensure the table header color stays intact */
+.table th {
+  background-color: #4f8ef7; /* Blue background */
+  color: #ffffff !important; /* Make sure the header text is white */
+  font-weight: bold;
+  padding: 0.8rem;
+  text-align: center;
+  border-bottom: 2px solid #e0e0e0; /* Add border for separation */
+  z-index: 10; /* Ensure it's not overlapped by modal */
+}
+
+/* Table cells */
+.table td {
+  text-align: center;
+  padding: 0.8rem;
+  color: #333; /* Dark text color */
+  border-bottom: 1px solid #e0e0e0; /* Add border for separation */
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row color */
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1; /* Row hover effect */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .card-shadow {
+    width: 90%; /* Adjust width on smaller screens */
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Ensure modal content does not affect the table */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Keep it above other content */
+}
+
+
+/* Modal box should have a higher z-index */
+.modal-box {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  width: 500px;
+  max-width: 90%;
+  padding: 1.5rem;
+  position: relative;
+  z-index: 1100; /* Ensure modal box appears above the overlay */
+}
+
+/* Modal header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Close button */
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: hsl(211, 100%, 45%); /* Highlight color on hover */
+}
+
+/* Modal footer */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}

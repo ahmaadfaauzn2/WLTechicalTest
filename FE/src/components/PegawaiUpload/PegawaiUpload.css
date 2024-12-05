@@ -1,0 +1,124 @@
+/* Styling untuk container utama, memastikan form berada di tengah layar */
+.upload-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Membuat container memenuhi seluruh layar */
+    background-color: #f8f9fa; /* Latar belakang lebih terang */
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  /* Styling card yang lebih halus */
+  .card-shadow {
+    width: 100%;
+    max-width: 600px; /* Membatasi lebar card agar lebih responsif */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card-shadow:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling untuk card header */
+  .card-header-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: #007bff;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+    margin: -2rem -2rem 1.5rem -2rem;
+    text-transform: uppercase;
+  }
+  
+  /* Styling untuk form label dan input */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-label {
+    font-weight: bold;
+    color: #444444;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .form-control {
+    border-radius: 6px;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.3s, border-color 0.3s;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Tombol Upload */
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 30%;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Efek angkat saat hover */
+  }
+  
+  /* Notifikasi status upload */
+  .status-message {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .status-message.success {
+    color: #28a745; /* Hijau untuk sukses */
+  }
+  
+  .status-message.error {
+    color: #dc3545; /* Merah untuk error */
+  }
+  
+  /* Responsif untuk ukuran layar kecil */
+  @media (max-width: 576px) {
+    .card-shadow {
+      width: 95%; /* Lebar card akan menyesuaikan dengan layar kecil */
+    }
+  
+    .card-header-title {
+      font-size: 1.5rem; /* Menyesuaikan ukuran font pada header */
+    }
+  
+    .form-label {
+      font-size: 0.9rem; /* Ukuran font lebih kecil untuk label */
+    }
+  
+    .form-control {
+      font-size: 0.9rem; /* Menyesuaikan font pada input */
+    }
+  
+    button[type="submit"] {
+      font-size: 1rem; /* Menyesuaikan ukuran tombol */
+      padding: 0.6rem;
+    }
+  }
+  

@@ -1,0 +1,45 @@
+.card-design {
+  width: 200px; /* Atur lebar kartu */
+  height: 200px; /* Atur tinggi kartu */
+}
+
+.card-title {
+  font-size: 20px; /* Atur ukuran font judul */
+}
+
+.btn {
+  width: 100%; /* Atur lebar tombol */
+  margin-top: 10px; /* Atur jarak atas tombol */
+}
+
+.card-2 {
+  width: 200px; /* Atur lebar kartu */
+  height: 200px; /* Atur tinggi kartu */
+  /* margin-top: 10px; */
+}
+.g-4 {
+  display: flex; /* Pastikan menggunakan Flexbox */
+  flex-wrap: wrap; /* Agar elemen tetap fleksibel */
+  justify-content: center; /* Posisi card di tengah */
+  gap: 16px; /* Jarak antar card */
+}
+.card-3 {
+  margin-top: 10px;
+}
+
+.btn {
+  width: 100%; /* Tombol memenuhi lebar card */
+  padding: 10px; /* Atur padding agar lebih rapi */
+  font-size: 16px; /* Ukuran font yang nyaman */
+  margin-top: 10px; /* Jarak atas tombol */
+  border-radius: 5px; /* Membuat tombol sedikit melengkung */
+  transition: all 0.3s ease; /* Efek hover */
+}
+
+.btn:hover {
+  transform: scale(1.05); /* Efek memperbesar saat hover */
+}
+.card-title{
+  font-size: 20px;
+  margin-top: 10px;
+}

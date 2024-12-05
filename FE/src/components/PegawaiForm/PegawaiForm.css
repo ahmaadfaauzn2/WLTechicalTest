@@ -1,0 +1,134 @@
+/* PegawaiForm.css */
+
+/* Full-page container to center the content */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f4f6; /* Softer light background */
+  margin: 0;
+  padding: 1rem; /* Prevent overflow on smaller screens */
+}
+
+/* Center the card and add shadow */
+.card-shadow {
+  width: 40rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Modern shadow */
+  border-radius: 12px; /* Smooth corners */
+  background-color: #ffffff; /* White background */
+  padding: 2rem; /* Add padding inside the card */
+  transition: transform 0.3s, box-shadow 0.3s; /* Subtle hover effect */
+}
+
+.card-shadow:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+}
+
+/* Styling for the card header */
+.card-header-title {
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: #007bff;
+  padding: 1rem;
+  border-radius: 10px 10px 0 0; /* Rounded corners for top of the card */
+  margin: -2rem -2rem 1.5rem -2rem; /* Extend header over card's edges */
+  text-transform: uppercase; /* Make the title uppercase for emphasis */
+}
+
+
+
+/* 
+.mb-4 {
+  margin-top: 10px;
+} */
+ .mb-3 {
+  margin-bottom: 15px;
+}
+
+/* Form label and input alignment */
+.form-group {
+  display: flex;
+  flex-direction: column; /* Align label and input vertically */
+  gap: 0.5rem; /* Space between label and input */
+  margin-bottom: 1.5rem;
+}
+
+/* Label Styling */
+.form-label {
+  font-weight: bold;
+  color: #444444;
+  font-size: 1rem;
+  margin-bottom: 1px;
+}
+
+/* Input Field Styling */
+.form-control {
+  width: 30%; /* Ensure input takes up full width */
+  border-radius: 6px;
+  margin-top: 10px; /* Adds a small margin to the top of the input */
+  padding: 0.7rem; /* Padding inside the input */
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+/* Focus effect for input */
+.form-control:focus {
+  border-color: #007bff; /* Blue border when focused */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Focus glow */
+}
+
+/* Submit button styling */
+.submit-button {
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Add smooth hover effect */
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+/* Adjust dropdowns for consistency */
+.form-select {
+  border-radius: 6px;
+  padding: 0.7rem;
+  font-size: 1rem;
+  /* margin-top: 10px; */
+  border: 1px solid #ddd;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+.form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Ensure responsiveness */
+@media (max-width: 576px) {
+  .card-shadow {
+    width: 95%; /* Adjust width on smaller screens */
+  }
+
+  .card-header-title {
+    font-size: 1.5rem;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+  }
+
+  .submit-button {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}
