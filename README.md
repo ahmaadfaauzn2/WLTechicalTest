@@ -79,6 +79,15 @@ Read: View the list of employees.
 Update: Edit employee details.
 Delete: Remove employees from the system.
 
+## Application Screenshot
+![WhatsApp Image 2024-12-06 at 11 25 01_d2906ee5](https://github.com/user-attachments/assets/5e0cda1a-632b-421c-8d43-bc56b1b28558)
+![WhatsApp Image 2024-12-06 at 11 25 07_8b8990b7](https://github.com/user-attachments/assets/dca814d8-be4c-4144-9a95-0b88cf4e0e48)
+![WhatsApp Image 2024-12-06 at 11 25 15_4b190872](https://github.com/user-attachments/assets/10e72d69-1278-4bc4-95e4-bd09f8a1572f)
+![WhatsApp Image 2024-12-06 at 11 25 22_8e0e8839](https://github.com/user-attachments/assets/cc111eaf-4642-4dbd-bf17-250c5aac4b0a)
+![WhatsApp Image 2024-12-06 at 11 25 27_913fda58](https://github.com/user-attachments/assets/60066c5e-fee4-4fc4-9475-38e52ca0d089)
+
+
+
 
 ## 📂 Endpoints (API)
 Here are the main API endpoints provided by the backend:
