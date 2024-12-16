@@ -1,4 +1,4 @@
-## CRUD Pegawai
+## CRUD Pegawai (Ghosted LOL)
 
 This is a simple CRUD (Create, Read, Update, Delete) application for managing employee (Pegawai) data. 
 The project is built using the following technologies:
